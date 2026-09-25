@@ -36,14 +36,17 @@ Create and activate a virtual environment (Recommended):Bashpython -m venv venv
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
+
 Install the required dependencies:Bashpip install streamlit pandas pypdf
+
 Run the Streamlit application:Bashstreamlit run app.py
- Project Directory StructurePlaintext├── data/
+
+ ## Project Directory StructurePlaintext├── data/
 │   ├── resumes/          # Auto-sorted resume/CV documents
 │   ├── invoices/         # Auto-sorted invoice/bill documents
 │   ├── others/           # Unclassified or general documents
 │   └── documents.db      # SQLite relational database
 ├── app.py                # Main Streamlit application script
 └── README.md             # Project documentation
- How to Use:
+## How to Use:
  Launch the app using streamlit run app.py.   Navigate to the Dashboard / Upload tab from the sidebar.Choose a document (.pdf, .txt, .png, .jpg) using the file uploader widget.   Click the " Process & Index Document" button to extract text, categorize, and commit the file to storage.Switch to View Documents to inspect extracted text previews, download files, or manage deletions.Use Search & Filter to quickly query specific document keywords.
